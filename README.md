@@ -13,7 +13,8 @@ Initialize project, download missing modules <br>
 
 ### `npm start`
 
-<b>Запуск проекта<b><br>
+<b>Запуск проекта<b>
+<br>
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
@@ -26,7 +27,7 @@ Entering the date in the form should be done in the following way:
 2000.05.18
 <br>
 <b>Ввод даты в форму должен производиться следующим образом:
-2000.05.18 <b>
+2000.05.18<b>
 
 
 
