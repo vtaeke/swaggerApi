@@ -49,3 +49,18 @@ export const updateEmployee = (employeeData: any) => {
     payload: employeeData,
   };
 };
+
+// export const updateEmployee = (employeeData: Employee) => {
+//   return (dispatch: Dispatch) => {
+//     dispatch({ type: FETCH_EMPLOYEES_REQUEST });
+
+//     axios
+//       .put(`https://reactapi.bsite.net/api/Employee/${employeeData.employeeId}`, employeeData)
+//       .then((response) => {
+//         dispatch({ type: UPDATE_EMPLOYEE, payload: response.data });
+//       })
+//       .catch((error) => {
+//         dispatch({ type: FETCH_EMPLOYEES_FAILURE, payload: error.message });
+//       });
+//   };
+// };

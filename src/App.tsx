@@ -2,12 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { ThunkDispatch } from 'redux-thunk';
 import { AnyAction } from 'redux';
-import {
-  ADD_EMPLOYEE,
-  UPDATE_EMPLOYEE,
-  addEmployee,
-  fetchEmployees,
-} from './actions/employeeActions';
+import { addEmployee, fetchEmployees } from './actions/employeeActions';
 import { Employee } from './types/employeeTyps';
 import {
   Container,

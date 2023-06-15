@@ -8,14 +8,12 @@ import {
 } from '../actions/employeeActions';
 import { Employee } from '../types/employeeTyps';
 
-// Тип состояния
 interface EmployeeState {
   loading: boolean;
   data: any[];
   error: string | null;
 }
 
-// Начальное состояние
 const initialState: EmployeeState = {
   loading: false,
   data: [],
