@@ -8,12 +8,12 @@ In the project directory, you can run:
 
 ### `npm i`
 
-Initialize project, download missing modules
+Initialize project, download missing modules <br>
 Инициализировать проект, загрузить недостающие модули
 
 ### `npm start`
 
-Запуск проекта
+Запуск проекта<br>
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
@@ -24,7 +24,7 @@ You will also see any lint errors in the console.
 
 Entering the date in the form should be done in the following way:
 2000.05.18
-
+<br>
 RU
 Ввод даты в форму должен производиться следующим образом:
 2000.05.18
