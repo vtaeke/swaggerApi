@@ -78,7 +78,7 @@ const App: React.FC = () => {
           Add new Employee
         </Button>
         <Modal isOpen={modal} toggle={toggle}>
-          <ModalHeader toggle={toggle}>Modal title</ModalHeader>
+          <ModalHeader toggle={toggle}>Add Employee</ModalHeader>
           <ModalBody>
             <form onSubmit={addEmployeeHandler}>
               <form>
