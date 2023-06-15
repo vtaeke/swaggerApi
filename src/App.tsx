@@ -116,7 +116,7 @@ const App: React.FC = () => {
                 color='primary'
                 type='submit'
               >
-                Добавить сотрудника
+                Add Employee
               </Button>
             </form>
           </ModalBody>

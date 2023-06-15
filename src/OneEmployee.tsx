@@ -20,10 +20,10 @@ export default function OneEmployee({ employee }: OneEmployeeProps) {
   };
 
   const [newEmployee, setNewEmployee] = useState({
-    firstName: '',
-    lastName: '',
-    birthday: '',
-    height: '',
+    firstName: employee.firstName,
+    lastName: employee.lastName,
+    birthday: employee.birthday,
+    height: employee.height,
   });
 
   const inputChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -36,24 +36,14 @@ export default function OneEmployee({ employee }: OneEmployeeProps) {
 
   const updateEmployeeHandler = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    dispatch(updateEmployee(newEmployee));
-    setNewEmployee({
-      firstName: '',
-      lastName: '',
-      birthday: '',
-      height: '',
-    });
+    const updatedEmployee = { ...newEmployee, employeeId: employee.employeeId };
+    dispatch(updateEmployee(updatedEmployee));
   };
 
   return (
     <div key={employee.employeeId}>
       <p>Name: {employee.firstName}</p>
       <p>Last Name: {employee.lastName}</p>
-      {/* <p>
-      Birthday: {new Date(employee.birthday).getFullYear()}-
-      {new Date(employee.birthday).getMonth() + 1}-
-      {new Date(employee.birthday).getDate()}
-    </p> */}
       <p>Birthday: {new Date(employee.birthday).toLocaleDateString()}</p>
       <p>Height: {employee.height}</p>
       <Button
@@ -63,12 +53,7 @@ export default function OneEmployee({ employee }: OneEmployeeProps) {
       >
         Delete
       </Button>
-      <Button
-        onClick={toggle}
-        color='warning'
-        style={{ margin: '0 5px 5px' }}
-        // onClick={() => updateEmployeeHandler(employee)}
-      >
+      <Button onClick={toggle} color='warning' style={{ margin: '0 5px 5px' }}>
         Update
       </Button>
       <Modal isOpen={modal} toggle={toggle}>
