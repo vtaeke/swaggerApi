@@ -8,8 +8,8 @@ In the project directory, you can run:
 
 ### `npm i`
 
-<b>Инициализировать проект, загрузить недостающие модули<b>
-Initialize project, download missing modules <br>
+<b>Инициализировать проект, загрузить недостающие модули<b><br>
+Initialize project, download missing modules 
 
 ### `npm start`
 
