@@ -123,7 +123,7 @@ const App: React.FC = () => {
         </Modal>
         {employees.map((employee: Employee) => (
           <Card style={{ width: '340px', marginBottom: '15px' }}>
-            <OneEmployee employee={employee} />
+            <OneEmployee key={employee.employeeId} employee={employee} />
           </Card>
         ))}
       </div>
