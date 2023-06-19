@@ -2,9 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Task
 
-In the project directory, you can run:
+Есть api https://reactapi.bsite.net/swagger/index.html для обработки списка сотрудников. И с ним якобы взаимодействуют несколько пользователей.
+Нужно сделать обычную обработку crud операций с использованием redux. Фильтрация, сортировка. каждый запрос api имеет задержу 5-6 секунд.
+
 
 ### `npm i`
 
